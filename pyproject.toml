@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ['py36']
+include = '\.pyi?$'
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203,W503"
+
+[project]
+name = "terminal-snake"
+dynamic = ["version"]
+description = "🐍 A fun snake game for your terminal - perfect for quick breaks!"
+readme = "README.md"
+requires-python = ">=3.6"
+keywords = ["snake", "game", "terminal", "console", "curses", "cli", "fun", "break", "arcade"]
+authors = [
+    {name = "Amadou Diallo", email = "aodiallo324@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Games/Entertainment :: Arcade",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Operating System :: Unix",
+    "Environment :: Console :: Curses",
+]
+
+[project.scripts]
+snake = "terminal_snake.cli:main"
+terminal-snake = "terminal_snake.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/fdnthecoder/terminal-snake"
+"Bug Reports" = "https://github.com/fdnthecoder/terminal-snake/issues"
+"Source" = "https://github.com/fdnthecoder/terminal-snake"
+Documentation = "https://github.com/fdnthecoder/terminal-snake/blob/main/README.md"
+
