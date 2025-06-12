@@ -185,3 +185,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Project-specific files to ignore
+PACKAGE_SUMMARY.md
+MANIFEST.in
+
